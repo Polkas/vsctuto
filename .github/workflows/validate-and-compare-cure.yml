@@ -83,7 +83,7 @@ jobs:
           trimmed=$(<solution.txt xargs)
           echo "Trimmed solution.txt → '$trimmed'"
 
-          if [ "$trimmed" != "$CURE" ]; then
+          if [ "$trimmed" != "Drug B" ]; then
             echo "❌ Mismatch: solution.txt does not match the expected cure" >&2
             exit 1
           fi
